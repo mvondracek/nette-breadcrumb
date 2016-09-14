@@ -23,7 +23,7 @@ Create component in your presenter (idelly in BasePresenter) and add link to the
 protected function createComponentBreadCrumb()
 {
 	$breadCrumb = new \Alnux\NetteBreadCrumb\BreadCrumb();
-	$breadCrumb->addLink('Main page', $this->link('Homepage:'), 'icon-homepage');
+	$breadCrumb->addLink('Main page', $this->link('Homepage:'), 'fa fa-home');
 
 	return $breadCrumb;
 }
@@ -37,7 +37,7 @@ $this['breadCrumb']->addLink('Sub page')
 to edit this link on any presenter's action you could use the next
 
 ```php
-$this['breadCrumb']->editLink('Sub page', $this->link('User:'), fa fa-dashboard)
+$this['breadCrumb']->editLink('Sub page', $this->link('User:'), 'fa fa-dashboard')
 ```
 
 and to remove
